@@ -1,10 +1,10 @@
-def adicionar_tarefa(tarefas, descricao):
+def adicionar_tarefa(tarefas, descricao, prioridade = "baixa"):
     """
     Adiciona uma nova tarefa à lista.
     Uma tarefa é um dicionário com 'descricao' e 'concluida'.
     """
     if descricao:  # Garante que a descrição não está vazia
-        nova_tarefa = {"descricao": descricao, "concluida": False}
+        nova_tarefa = {"descricao": descricao, "prioridade": prioridade, "concluida": False}
         tarefas.append(nova_tarefa)
         print(f"\n✅ Tarefa '{descricao}' adicionada com sucesso!")
     else:

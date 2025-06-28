@@ -74,7 +74,7 @@ def main():
 
         if escolha == '1':
             descricao = input("Digite a descrição da nova tarefa: ")
-            prioridade = input("Qual a prioridade desta tarefa? (alta/média/baixa?)")
+            prioridade = input("Qual a prioridade desta tarefa? (alta/média/baixa?) ")
             adicionar_tarefa(lista_de_tarefas, descricao, prioridade)
         elif escolha == '2':
             listar_tarefas(lista_de_tarefas)

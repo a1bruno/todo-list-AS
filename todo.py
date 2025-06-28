@@ -20,7 +20,7 @@ def listar_tarefas(tarefas):
         for i, tarefa in enumerate(tarefas):
             status = "✅" if tarefa["concluida"] else "◻️"
             # O 'i + 1' é para mostrar um índice amigável ao usuário (começando em 1)
-            print(f"{i + 1}. {status} {tarefa['descricao']}")
+            print(f"{i + 1}. {status} {tarefa['descricao']} - Prioridade: {tarefa['prioridade']}")
     print("--------------------------")
 
 def marcar_como_concluida(tarefas, indice):
@@ -67,7 +67,7 @@ def main():
         if escolha == '1':
             descricao = input("Digite a descrição da nova tarefa: ")
             prioridade = input("Qual a prioridade desta tarefa? (alta/média/baixa?)")
-            adicionar_tarefa(lista_de_tarefas, descricao)
+            adicionar_tarefa(lista_de_tarefas, descricao, prioridade)
         elif escolha == '2':
             listar_tarefas(lista_de_tarefas)
         elif escolha == '3':

@@ -87,7 +87,8 @@ def main():
                 print("\n❌ Entrada inválida. Por favor, digite um número.")
         elif escolha == '4':
             try:
-                indice = int(input("Digite o número da tarefa que deseja mudar a descrição: "))
+                indice = int(input("Digite o número da tarefa que deseja alterar a descrição: "))
+                editar_descricao_tarefa(lista_de_tarefas, indice)
             except ValueError:
                 print("\n❌ Entrada inválida. Por favor, digite um número.")
         elif escolha == '5':

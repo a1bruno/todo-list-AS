@@ -79,6 +79,11 @@ def main():
             except ValueError:
                 print("\n❌ Entrada inválida. Por favor, digite um número.")
         elif escolha == '4':
+            try:
+                indice = int(input("Digite o número da tarefa que deseja mudar a descrição: "))
+            except ValueError:
+                print("\n❌ Entrada inválida. Por favor, digite um número.")
+        elif escolha == '5':
             listar_tarefas(lista_de_tarefas)
             try:
                 indice = int(input("Digite o número da tarefa para remover: "))

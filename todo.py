@@ -51,7 +51,8 @@ def exibir_menu():
     print("1. Adicionar Tarefa")
     print("2. Listar Tarefas")
     print("3. Marcar Tarefa como Concluída")
-    print("4. Remover Tarefa")
+    print("4. Editar Descrição de uma Tarefa")
+    print("5. Remover Tarefa")
     print("0. Sair")
 
 def main():
